@@ -5,20 +5,117 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: black;
+  color: white;
+}
+.gradient-color {
+  background: linear-gradient(to left,rgb(56, 13, 212), rgb(124, 0, 124));
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+/* Navbar  ------------------------------------------------*/
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2vw;
+  position: sticky;
+  top: 0vw;
+  min-height: 1rem;
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+}
+.nav-logo {
+  width: 40vw;
+  color: rgb(56, 13, 212);
+  font-weight: bolder;
+  font-size: 1.4rem;
+}
+.nav-link-container {
+  display: flex;
+  justify-content: space-evenly;
+  width: 56vw;
+}
+.nav-link {
+  border-bottom:  transparent 3px solid;
+}
+.nav-link:hover {
+  border-color: rgb(124, 0, 124);
+}
+.nav-btn {
+  display: none;
 }
 
+
+/* profile -----------------------------------------------*/
+.profile-container {
+  display: flex;
+  min-height: 82vh;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-bottom: 10vh;
+}
+.profile-text {
+  width: 45vw;
+  font-size: 1.7rem;
+}
+.profile-hello {
+  font-size: 2.5rem;
+}
+.profile-photo {
+  width: 20vw;
+}
+
+
+/* about me ---------------------------------------------*/
 .heading {
+  text-align: center;
+}
+.about-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 1.5rem 0px;
+  min-height: 40vw;
+}
+.about-2 {
+  width: 20%;
+}
+.profile-image {
+  border-radius: 100%;
+}
+.about-1 {
+  width: 35%;
+}
+.resume-btn {
+  text-align: center;
+  margin: 1rem;
+}
+.achievement-banner {
+  display: flex;
+  justify-content: space-around;
+  margin: 1.5rem 0px;
+}
+
+
+/* copyright --------------------------------------------*/
+.copyright {
+  padding: .5rem;
+  text-align: center;
+  margin-bottom: 0px;
+}
+
+
+
+
+
+/* .heading {
   text-align: center;
   padding: 20px;
   background-color: cornflowerblue;
-}
-.about-me {
-  background-color: skyblue;
 }
 .about-container {
   display: flex;
@@ -26,17 +123,10 @@ code {
   align-items: center;
   padding-bottom: 30px;
 }
-.resume-btn {
-  text-align: center;
-  margin: 20px;
-}
 .about-1, .about-2 {
   width: 30vw;
-  /* margin: 2vw; */
 }
-.profile-image {
-  border-radius: 100%;
-}
+
 .achievement-banner {
   display: flex;
   justify-content: space-around;
@@ -45,10 +135,59 @@ code {
   background-color: antiquewhite;
   min-height: 100px;
 }
-.copyright {
-  color: white;
-  background-color: grey;
-  padding: 10px;
-  text-align: center;
-  margin-bottom: 0px;
+ */
+
+
+
+
+
+
+
+
+
+
+ @media (width <= 768px) {
+  /* navbar ---------------*/
+  .nav-logo {
+    width: 20vw;
+  }
+  .nav-link-container {
+    width: 76vw;
+    display: none;
+  }
+  .nav-btn {
+    display: block;
+  }
+  /* profile --------------- */
+  .profile-container {
+    flex-direction: column;
+  }
+  .profile-text {
+    width: 53vw;
+    font-size: 1.2rem;
+    margin: 40px;
+  }
+  .profile-photo {
+    width: 53vw;
+    margin: 40px;
+  }
+}
+
+@media (width <= 480px) {
+  /* navbar ---------------*/
+  .nav-container {
+    margin: 5vw;
+  }
+  /* profile ---------------*/
+  .profile-text {
+    width: 80vw;
+    font-size: 1rem;
+    margin: 30px 0px;
+  }
+  .profile-hello {
+  font-size: 2rem;
+  }
+  .profile-photo {
+    width: 60vw;
+  }
 }
