@@ -72,20 +72,20 @@ body {
 /* profile -----------------------------------------------*/
 .profile-container {
   display: flex;
-  min-height: 82vh;
+  min-height: 75vh;
   align-items: center;
   justify-content: space-evenly;
   margin-bottom: 10vh;
 }
 .profile-text {
-  width: 45vw;
-  font-size: 1.7rem;
+  width: 250px;
+  font-size: 1.6rem;
 }
 .profile-hello {
   font-size: 2.5rem;
 }
 .profile-photo {
-  width: 20vw;
+  width: 25vw;
 }
 
 
@@ -188,13 +188,15 @@ body {
     flex-direction: column;
   }
   .profile-text {
-    width: 53vw;
-    font-size: 1.2rem;
-    margin: 40px;
+    width: 50vw;
+    font-size: 1.4rem;
+    margin:   50px auto;
+  }
+  .profile-hello {
+    font-size: 2.3rem;
   }
   .profile-photo {
-    width: 53vw;
-    margin: 40px;
+    width: 50vw;
   }
 }
 
@@ -205,12 +207,12 @@ body {
   }
   /* profile ---------------*/
   .profile-text {
-    width: 80vw;
-    font-size: 1rem;
-    margin: 30px 0px;
+    width: 70vw;
+    font-size: 1.2rem;
+    margin-left: 20vw;
   }
   .profile-hello {
-  font-size: 2rem;
+  font-size: 2.1rem;
   }
   .profile-photo {
     width: 60vw;
