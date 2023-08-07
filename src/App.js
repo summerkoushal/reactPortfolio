@@ -12,12 +12,13 @@ function App() {
   return (
     <>
       <Navbar />
+      {/* bc profile ki testing karenge kl  */}
       <Profile />
-      <AboutMe />
+      {/* <AboutMe />
       <Skills />
       <Projects />
       <Contact />
-      <Footer />
+      <Footer /> */}
     </>
   );
 }

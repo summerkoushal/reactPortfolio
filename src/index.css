@@ -21,7 +21,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 2vw;
+  padding: 2rem;
   position: sticky;
   top: 0vw;
   min-height: 1rem;
@@ -30,7 +30,8 @@ body {
 }
 .nav-logo {
   width: 40vw;
-  color: rgb(56, 13, 212);
+  color: rgb(212, 13, 162);
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   font-weight: bolder;
   font-size: 1.4rem;
 }
@@ -40,13 +41,31 @@ body {
   width: 56vw;
 }
 .nav-link {
+  color: rgba(185, 185, 185, 0.844);
   border-bottom:  transparent 3px solid;
 }
 .nav-link:hover {
+  color: white;
   border-color: rgb(124, 0, 124);
 }
 .nav-btn {
   display: none;
+}
+.dropdown-menu {
+  padding: 0px;
+  border-radius: 0px;
+  background: linear-gradient(#ff0000, #0059ff), linear-gradient(to right,rgb(56, 13, 212), rgb(124, 0, 124));
+  background-origin: padding-box, border-box;
+  background-repeat: no-repeat; 
+  border: 2px solid transparent;
+}
+.dropdown-item {
+  padding-bottom: 6px ;
+  padding-top: 6px;
+  color: rgba(185, 185, 185, 0.844);
+}
+.dropdown-item:hover {
+  color: white;
 }
 
 
@@ -97,7 +116,10 @@ body {
 .achievement-banner {
   display: flex;
   justify-content: space-around;
-  margin: 1.5rem 0px;
+  margin: 1.5rem ;
+  border-radius: 20px;
+  padding: 25px;
+  box-shadow: 0px 0px 30px 10px rgba(0, 98, 136, 0.908);
 }
 
 
@@ -148,6 +170,9 @@ body {
 
  @media (width <= 768px) {
   /* navbar ---------------*/
+  .nav-container {
+    padding: 1.5rem;
+  }
   .nav-logo {
     width: 20vw;
   }
@@ -174,9 +199,9 @@ body {
 }
 
 @media (width <= 480px) {
-  /* navbar ---------------*/
+  /* navbar ----------------*/
   .nav-container {
-    margin: 5vw;
+    padding: 1rem;
   }
   /* profile ---------------*/
   .profile-text {
