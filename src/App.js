@@ -12,10 +12,11 @@ function App() {
   return (
     <>
       <Navbar />
-      {/* bc profile ki testing karenge kl  */}
       <Profile />
-      {/* <AboutMe />
-      <Skills />
+      {/* . */}
+      {/* <AboutMe /> */}
+      {/* . */}
+      {/* <Skills />
       <Projects />
       <Contact />
       <Footer /> */}

@@ -1,9 +1,12 @@
 import React from 'react'
+import portfolioimage from "../assets/portfol.jpeg"
+
+
 
 export default function Projects() {
   return (
-    <div>
-      <h1 style={{textAlign:'center', margin:'1rem'}}>Project</h1>
+    <div className='container'>
+      <h1 className='heading' >Project</h1>
 
       <div id="carouselExampleIndicators" class="carousel slide container">
         <div class="carousel-indicators">
@@ -31,21 +34,21 @@ export default function Projects() {
         <div class="carousel-inner">
           <div class="carousel-item active">
             <img
-              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqeZ5mVbarupP8UWVic7UtumtbIyE0GY-ucQ&usqp=CAU"
+              src={portfolioimage}
               class="d-block w-100"
               alt="..."
             />
           </div>
           <div class="carousel-item">
             <img
-              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqeZ5mVbarupP8UWVic7UtumtbIyE0GY-ucQ&usqp=CAU"
+              src={portfolioimage}
               class="d-block w-100"
               alt="..."
             />
           </div>
           <div class="carousel-item">
             <img
-              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqeZ5mVbarupP8UWVic7UtumtbIyE0GY-ucQ&usqp=CAU"
+              src={portfolioimage}
               class="d-block w-100"
               alt="..."
             />

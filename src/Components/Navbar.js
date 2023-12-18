@@ -1,48 +1,30 @@
-import React from 'react'
+import React, { useState } from "react";
+import SideNav from "./SideNav";
 
 export default function Navbar() {
+  const [SideBar, setSideBar] = useState(false);
+
+  const sidebar = () => {
+    setSideBar(!SideBar);
+  };
+
   return (
-    <div className="nav-container bg-black">
-      <div>
-        <span className="nav-logo">Summer</span>
+    <>
+      <div className="nav-container">
+        <span className="nav-logo">Summer.me</span>
+        <li className="nav-link-container">
+          <a className="nav-link">Home</a>
+          <a className="nav-link">About</a>
+          <a className="nav-link">Projects</a>
+          <a className="nav-link">Contact</a>
+        </li>
+        {SideBar ? (
+          <i className="fa fa-xmark" onClick={() => sidebar()}></i>
+        ) : (
+          <i className="fa fa-bars" onClick={() => sidebar()}></i>
+        )}
       </div>
-      <div className="nav-link-container">
-        <span className="nav-link">About Me</span>
-        <span className="nav-link">Skills</span>
-        <span className="nav-link">Projects</span>
-        <span className="nav-link">Contact Me</span>
-      </div>
-      <div class="btn-group nav-btn">
-        <button
-          type="button"
-          class="btn btn-secondary dropdown-toggle bg-dark"
-          data-bs-toggle="dropdown"
-          aria-expanded="false"
-        >
-        </button>
-        <ul class="dropdown-menu dropdown-menu-end">
-          <li>
-            <button class="dropdown-item bg-black" type="button">
-              About Me
-            </button>
-          </li>
-          <li>
-            <button class="dropdown-item bg-black" type="button">
-              Skills
-            </button>
-          </li>
-          <li>
-            <button class="dropdown-item bg-black" type="button">
-              Projects
-            </button>
-          </li>
-          <li>
-            <button class="dropdown-item bg-black" type="button">
-              Contact Me
-            </button>
-          </li>
-        </ul>
-      </div>
-    </div>
+      {SideBar && <SideNav />}
+    </>
   );
 }

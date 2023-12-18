@@ -1,88 +1,88 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  margin: 0 !important;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif; 
+  background-color: whitesmoke;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: black;
-  color: white;
+}
+li {
+  list-style-type:none;
 }
 .gradient-color {
-  background: linear-gradient(to left,rgb(56, 13, 212), rgb(124, 0, 124));
+  background: linear-gradient(to left,var(--bs-blue), var(--bs-purple));
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
 }
 
+:root {
+  --bs-blue: #0082e6;
+  --bs-purple: rgb(124, 0, 124);
+  --bs-violet: #4d0e95;
+  --bs-navy: #313866;
+  --bs-light-violet: #504099;
+  --bs-light-purple: #974EC3;
+  --bs-pink: #FE7BE5;
+  --bs-grey: rgba(185, 185, 185, 0.844);
+  --bs-red: #ff0000;
+  --bs-dark-blue: rgb(0, 2, 21);
+  --bs-light-pink: #fec3f89d;
+}
 
 /* Navbar  ------------------------------------------------*/
 .nav-container {
+  position: sticky;
+  top: 0vw;
+  height: 5rem;
+  background-color: white;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 2rem;
-  position: sticky;
-  top: 0vw;
-  min-height: 1rem;
-  -webkit-backdrop-filter: blur(8px);
-  backdrop-filter: blur(8px);
 }
 .nav-logo {
-  width: 40vw;
-  color: rgb(212, 13, 162);
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  font-weight: bolder;
-  font-size: 1.4rem;
+  margin-left: 40px;
+  cursor: pointer;
+  color: rgba(0, 0, 0, 0.9);
+  font-weight: 800;
+  font-size: 1.3rem;
 }
 .nav-link-container {
   display: flex;
+  font-size: 1.1rem;
   justify-content: space-evenly;
-  width: 56vw;
+  width: 40vw;
 }
 .nav-link {
-  color: rgba(185, 185, 185, 0.844);
-  border-bottom:  transparent 3px solid;
+  cursor: pointer;
+  font-weight: 700;
+  color: rgba(0, 0, 0, 0.8);
 }
 .nav-link:hover {
-  color: white;
-  border-color: rgb(124, 0, 124);
+  color: var(--bs-blue);
 }
-.nav-btn {
+.fa-bars, .fa-xmark {
+  margin-right: 20px;
+  font-size: 1.5rem;
+  cursor: pointer;
   display: none;
-}
-.dropdown-menu {
-  padding: 0px;
-  border-radius: 0px;
-  background: linear-gradient(#ff0000, #0059ff), linear-gradient(to right,rgb(56, 13, 212), rgb(124, 0, 124));
-  background-origin: padding-box, border-box;
-  background-repeat: no-repeat; 
-  border: 2px solid transparent;
-}
-.dropdown-item {
-  padding-bottom: 6px ;
-  padding-top: 6px;
-  color: rgba(185, 185, 185, 0.844);
-}
-.dropdown-item:hover {
-  color: white;
-}
 
+}
+.fa-bars:hover, .fa-xmark:hover {
+  color: var(--bs-blue);
+}
 
 /* profile -----------------------------------------------*/
 .profile-container {
   display: flex;
-  min-height: 75vh;
+  min-height: 57vh;
   align-items: center;
   justify-content: space-evenly;
-  margin-bottom: 10vh;
+  /* margin-bottom: 20vh; */
+  margin-top: 2rem;
 }
 .profile-text {
-  width: 250px;
+  width: 45%;
   font-size: 1.6rem;
-}
-.profile-hello {
-  font-size: 2.5rem;
 }
 .profile-photo {
   width: 25vw;
@@ -90,9 +90,6 @@ body {
 
 
 /* about me ---------------------------------------------*/
-.heading {
-  text-align: center;
-}
 .about-container {
   display: flex;
   justify-content: space-evenly;
@@ -106,9 +103,6 @@ body {
 .profile-image {
   border-radius: 100%;
 }
-.about-1 {
-  width: 35%;
-}
 .resume-btn {
   text-align: center;
   margin: 1rem;
@@ -119,17 +113,75 @@ body {
   margin: 1.5rem ;
   border-radius: 20px;
   padding: 25px;
-  box-shadow: 0px 0px 30px 10px rgba(0, 98, 136, 0.908);
+}
+
+
+/* Contact ---------------------------------------------*/
+.heading {
+  text-align: center;
+  margin: 80px;
+  color:blueviolet;
+}
+.contact-container {
+  margin: 5vw auto;
+  background-color: var(--bs-dark-blue);
+  box-shadow: 10px 10px 100000px 14px rgb(54, 1, 61);
+  border-radius: 10px;
+  border: 3px solid var(--bs-light-pink);
+  display: flex;
+  justify-content: space-around;
+  min-height: 40vh;
+  width: 70vw;
+  align-items: center;
+}
+.contact-box1 {
+  align-self: flex-start;
+  margin: 50px 0px;
+  width: 25vw;
+}
+.contact-heading {
+  color: var(--bs-pink);
+}
+.contact-box2 {
+  display: flex;
+  flex-direction: column;
+  width: 35vw;
+  margin: 2rem 0px;
+  align-items: center;
+}
+.contact-input {
+  margin: 10px 0px;
+  width: 35vw;
+  background-color: rgb(0, 2, 21);
+  border: 1px solid white;
+  color: white;
+  padding-left: 7px;
+}
+.contact-textarea {
+  min-height: 14vw;
+}
+.contact-submit {
+  width: 100px;
+  margin-top: 10px;
+  color: white;
+  background-color: var(--bs-violet);
+  box-shadow: 0px 0px 9px var(--bs-violet);
+}
+.contact-submit:hover {
+  border-color: var(--bs-light-purple);
 }
 
 
 /* copyright --------------------------------------------*/
+.copyright-container {
+  min-height: 20vh;
+  background-color: var(--bs-violet);
+}
 .copyright {
-  padding: .5rem;
   text-align: center;
   margin-bottom: 0px;
+  padding-top: 5vh;
 }
-
 
 
 
@@ -169,6 +221,16 @@ body {
 
 
  @media (width <= 768px) {
+
+  /* ---------- */
+  .fa-bars, .fa-xmark {
+    display: block;
+  }
+  .technology {
+    flex-direction: column;
+  }
+  /* --------- */
+
   /* navbar ---------------*/
   .nav-container {
     padding: 1.5rem;
@@ -197,6 +259,43 @@ body {
   }
   .profile-photo {
     width: 50vw;
+  }
+  /* about me -------------- */
+  .about-container {
+    flex-direction: column;
+    /* justify-content: space-evenly; */
+    /* align-items: center; */
+    /* margin: 1.5rem 0px; */
+    /* min-height: 40vw; */
+  }
+  .about-1 {
+    display: flex;
+  }
+  .contact-container {
+    margin: 10vw auto;
+    flex-direction: column;
+  }
+  /* contact --------------- */
+  .contact-container {
+    width: 80vw;
+  }
+  .contact-box1 {
+    margin: 7vw 0px 0px 10vw;
+    width: 70vw;
+  }
+  .contact-box2 {
+    width: 80vw;
+    margin: 2rem 0px;
+    align-items: center;
+  }
+  .contact-input {
+    margin: 12px 0px;
+    width: 60vw;
+    background-color: rgb(0, 2, 21);
+    border-radius: 3px;
+    border: 1px solid white;
+    color: white;
+    padding-left: 7px;
   }
 }
 
