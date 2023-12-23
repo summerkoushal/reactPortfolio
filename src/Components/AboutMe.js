@@ -2,34 +2,28 @@ import React from 'react'
 
 export default function AboutMe() {
   return (
-    <div>
-      <h1 className="heading">About me</h1>
-      <div className="about-container">
-        <div className="about-2">
+    <>
+      <div className="aboutme-container">
+        <div className="about-image-container">
           <img
-            style={{
-              width:'100%'}}
-            className="profile-image"
-            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2TYBosqHfkiz4s1gDoNeCssDevAQnOvCPJ31URmxDFg&s"
-            alt=""
+            className="about-img"
+            src="https://www.stefantopalovic.com/static/media/about-img.62b47e7f183d4b4e9feb.webp"
+            alt="aboutMe image"
           />
         </div>
-        <div className="about-1">
-          I am a Final Year student, pursuing bachelor of technology at Shri
-          Guru Gobind Singhji institute of engineering and technology, Nanded.
-          <div className="resume-btn">
-            <button className="btn btn-primary">Resume</button>
-          </div>
+        <div className="about-text">
+          <strong>ABOUT ME</strong> <br />{" "}
+          <b> A dedicated Front-end Developer based in Belgrade, Serbia 📍</b>{" "}
+          <br /> As a Junior Front-End Developer, I possess an impressive
+          arsenal of skills in HTML, CSS, JavaScript, React, Tailwind, and SCSS.
+          I excel in designing and maintaining responsive websites that offer a
+          smooth user experience. My expertise lies in crafting dynamic,
+          engaging interfaces through writing clean and optimized code and
+          utilizing cutting-edge development tools and techniques. I am also a
+          team player who thrives in collaborating with cross-functional teams
+          to produce outstanding web applications.
         </div>
       </div>
-      <div className="achievement-banner">
-        <div>
-          projects <div>3</div>
-        </div>
-        <div>
-          Problems solved <div>900+</div>
-        </div>
-      </div>
-    </div>
+    </>
   );
 }

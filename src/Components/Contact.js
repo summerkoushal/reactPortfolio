@@ -16,7 +16,7 @@ export default function Contact() {
           <input className='contact-input' type="text" placeholder="Enter name"></input>
           <input className='contact-input' type="text" placeholder="Subject"></input>
           <textarea className='contact-input contact-textarea' placeholder="Message"></textarea>
-          <button className='btn btn-warnidng contact-submit'>Submit</button>
+          <button className='btn btn-warning contact-submit'>Submit</button>
         </div>
       </div>
     </div>

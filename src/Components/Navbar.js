@@ -13,10 +13,10 @@ export default function Navbar() {
       <div className="nav-container">
         <span className="nav-logo">Summer.me</span>
         <li className="nav-link-container">
-          <a className="nav-link">Home</a>
-          <a className="nav-link">About</a>
-          <a className="nav-link">Projects</a>
-          <a className="nav-link">Contact</a>
+          <a href="#Home" className="nav-link">Home</a>
+          <a href="About" className="nav-link">About</a>
+          <a href="Projects" className="nav-link">Projects</a>
+          <a href="Contact" className="nav-link">Contact</a>
         </li>
         {SideBar ? (
           <i className="fa fa-xmark" onClick={() => sidebar()}></i>
