@@ -18,7 +18,7 @@ export default function Projects() {
             content="Divyaamrit construction website"
           />
           <ProjectCard
-            link="https://summerkoushal.me/"
+            link="https://github.com/summerkoushal/reactPortfolio"
             image={port}
             content="Personal portfolio project"
           />
