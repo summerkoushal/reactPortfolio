@@ -1,18 +1,12 @@
-import React from 'react'
-import divyaamrit from "../assets/divyaamrit.png";
-import portfolioimage from "../assets/portfol.jpeg";
+import React from "react";
 
 export default function ProjectCard(props) {
   return (
     <>
-      <div className="heading-container">
-        <div style={{ width: "30vw", margin: "3rem" }} className="project-card">
-          <img style={{ width: "100%" }} src={divyaamrit} />
-          <br />
-                  <p style={{ textAlign: "center" }}>
-                      {props.content}
-                  </p>
-        </div>
+      <div className="project-card">
+        <img className="project-img" src={props.image} />
+        <br />
+        <a href={props.link} className="project-caption">{props.content}</a>
       </div>
     </>
   );

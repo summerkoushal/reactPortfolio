@@ -10,13 +10,24 @@ export default function Navbar() {
 
   return (
     <>
+      <div id="home"></div>
       <div className="nav-container">
-        <span className="nav-logo">Summer.me</span>
+        <a href="#home" className="nav-logo">
+          Summer.me
+        </a>
         <li className="nav-link-container">
-          <a href="#Home" className="nav-link">Home</a>
-          <a href="About" className="nav-link">About</a>
-          <a href="Projects" className="nav-link">Projects</a>
-          <a href="Contact" className="nav-link">Contact</a>
+          <a href="#home" className="nav-link">
+            Home
+          </a>
+          <a href="#about" className="nav-link">
+            About
+          </a>
+          <a href="#projects" className="nav-link">
+            Projects
+          </a>
+          <a href="#contact" className="nav-link">
+            Contact
+          </a>
         </li>
         {SideBar ? (
           <i className="fa fa-xmark" onClick={() => sidebar()}></i>
