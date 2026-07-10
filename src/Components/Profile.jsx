@@ -3,13 +3,16 @@ import React from "react";
 export default function Profile() {
   return (
     <>
-      <div className="container profile-tech-container" style={{ padding: "0px 40px" }}>
+      <div
+        className="container profile-tech-container"
+        style={{ padding: "0px 40px" }}
+      >
         {/* profile container  */}
         <div className="profile-container">
           <div className="profile-text">
             <h2 style={{ display: "flex" }}>
               Front-End React Developer &nbsp;
-              <img alt="hand" style={{ height: "2rem" }} src="./hand.png"/>
+              <img alt="hand" style={{ height: "2rem" }} src="./hand.png" />
             </h2>
             {/* &nbsp; */}
             <span className="auto-type">
@@ -21,7 +24,7 @@ export default function Profile() {
           <div className="profile-photo">
             <img
               width={"100%"}
-              src="https://svgcollections.com/wp-content/uploads/2024/06/cool_giraffe_zf1Yz.png"
+              src="https://cdni.iconscout.com/illustration/premium/thumb/programmer-illustration-svg-download-png-5624394.png"
               alt="profile"
             />
           </div>
@@ -49,10 +52,16 @@ export default function Profile() {
               <img alt="skills" src="https://skillicons.dev/icons?i=html,css" />
             </li>
             <li href="https://skillicons.dev" style={{ margin: "1rem" }}>
-              <img alt="skills" src="https://skillicons.dev/icons?i=js,bootstrap" />
+              <img
+                alt="skills"
+                src="https://skillicons.dev/icons?i=js,bootstrap"
+              />
             </li>
             <li href="https://skillicons.dev" style={{ margin: "1rem" }}>
-              <img alt="skills" src="https://skillicons.dev/icons?i=git,react" />
+              <img
+                alt="skills"
+                src="https://skillicons.dev/icons?i=git,react"
+              />
             </li>
             <li href="https://skillicons.dev" style={{ margin: "1rem" }}>
               <img alt="skills" src="https://skillicons.dev/icons?i=py,cpp" />
