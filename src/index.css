@@ -1,0 +1,335 @@
+/* :root {
+  --text: #6b6375;
+  --text-h: #08060d;
+  --bg: #fff;
+  --border: #e5e4e7;
+  --code-bg: #f4f3ec;
+  --accent: #aa3bff;
+  --accent-bg: rgba(170, 59, 255, 0.1);
+  --accent-border: rgba(170, 59, 255, 0.5);
+  --social-bg: rgba(244, 243, 236, 0.5);
+  --shadow:
+    rgba(0, 0, 0, 0.1) 0 10px 15px -3px, rgba(0, 0, 0, 0.05) 0 4px 6px -2px;
+
+  --sans: system-ui, 'Segoe UI', Roboto, sans-serif;
+  --heading: system-ui, 'Segoe UI', Roboto, sans-serif;
+  --mono: ui-monospace, Consolas, monospace;
+
+  font: 18px/145% var(--sans);
+  letter-spacing: 0.18px;
+  color-scheme: light dark;
+  color: var(--text);
+  background: var(--bg);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  @media (max-width: 1024px) {
+    font-size: 16px;
+  }
+} */
+
+/*  ------------------------------------------------*/
+
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif; 
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style-type:none;
+}
+.gradient-color {
+  background: linear-gradient(to left,var(--bs-blue), var(--bs-purple));
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+:root {
+  --bs-blue: hsl(206, 100%, 45%);
+  --bs-purple: rgb(124, 0, 124);
+  --bs-violet: hsl(268, 83%, 32%);
+  --bs-navy: hsl(232, 35%, 30%);
+  --bs-light-violet: hsl(251, 41%, 43%);
+  --bs-light-purple: hsl(277, 49%, 54%);
+  --bs-pink: hsl(311, 98%, 74%);
+  --bs-grey: hsla(0, 0%, 73%, 0.844);
+  --bs-red: hsl(0, 100%, 50%);
+  --bs-dark-blue: hsl(234, 100%, 4%);
+  --bs-light-pink: hsla(306, 97%, 88%, .9);
+}
+
+/* Navbar  ------------------------------------------------*/
+.nav-container {
+  position: sticky;
+  top: 0vw;
+  height: 55px;
+  background-color: hsl(54, 100%, 50%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-logo {
+  margin-left: 40px;
+  margin-top: 8px;
+  cursor: pointer;
+  color: rgba(0, 0, 0, 0.9);
+  font-weight: 800;
+  font-size: 1.5rem;
+  font-family: fantasy;
+}
+.nav-link-container {
+  display: flex;
+  font-size: 1rem;
+  justify-content: space-evenly;
+  width: 40vw;
+}
+.nav-link {
+  cursor: pointer;
+}
+.nav-link:hover {
+  color: var(--bs-red);
+}
+.fa-bars, .fa-xmark {
+  margin-right: 20px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  display: none;
+
+}
+.fa-bars:hover, .fa-xmark:hover {
+  color: var(--bs-blue);
+}
+
+/* profile -----------------------------------------------*/
+.profile-container {
+  display: flex;
+  align-items: center;
+  min-height: calc(100vh - 55px - 200px);
+  justify-content: space-evenly;
+  margin-top: 2rem;
+}
+.profile-text {
+  width: 45%;
+  font-size: 1.6rem;
+}
+.profile-photo {
+  width: 25vw;
+}
+
+
+/* about me ---------------------------------------------*/
+.aboutme-container {
+  display: flex;
+  background-color: white;
+  justify-content: space-around;
+  margin:  3rem auto;
+  padding: 4rem 0px;
+  width: 80vw;
+  border-radius: 50px;
+  box-shadow: 0px 0px 10px 0px rgb(188, 188, 188)
+}
+.about-image-container {
+  width: 40vw;
+  align-self: center;
+}
+.about-img {
+  width: 100%;
+}
+.about-text {
+  width: 30vw;
+  font-size: 1rem;
+  align-self: center;
+}
+/* Projects --------------------------------------------*/
+.project-container {
+  margin: 4rem 10vw;
+}
+.project-card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+.project-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 35vw;
+  margin:30px auto;
+  border-radius: 10px;
+  background-color: white;
+}
+.project-img {
+  width: 90%;
+  margin-top: 5%;
+  box-shadow: 0px 0px 3px 3px whitesmoke;
+}
+.project-caption {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+/* Contact ---------------------------------------------*/
+.contact-box1 {
+  margin: 3rem 0px;
+  width: 25vw;
+}
+.contact-box2 {
+  display: flex;
+  flex-direction: column;
+  width: 35vw;
+  align-self: center;
+  margin: 2rem 0px;
+}
+.contact-input {
+  margin: 10px 0px;
+  width: 35vw;
+  padding-left: .5rem;
+}
+.contact-textarea {
+  min-height: 22vh;
+}
+.contact-submit {
+  width: 100px;
+  margin-top: 10px;
+}
+
+
+ @media (width <= 768px) {
+
+  /* ---------- */
+  .fa-bars, .fa-xmark {
+    display: block;
+  }
+  .technology {
+    flex-direction: column;
+  }
+  /* --------- */
+
+  /* navbar ---------------*/
+  .nav-link-container {
+    width: 76vw;
+    display: none;
+  }
+  .nav-btn {
+    display: block;
+  }
+  /* profile --------------- */
+  .profile-container {
+    flex-direction: column;
+  }
+  .profile-text {
+    width: 50vw;
+    font-size: 1.4rem;
+    margin:   50px auto;
+  }
+  .profile-hello {
+    font-size: 2.3rem;
+  }
+  .profile-photo {
+    width: 50vw;
+  }
+  /* about me -------------- */
+  .aboutme-container {
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: auto;
+    width: 80vw;
+  }
+  .about-image-container {
+    width: 60vw;
+    align-self: center;
+    margin-bottom: 70px;
+  }
+  .about-img {
+    width: 100%;
+  }
+  .about-text {
+    width: 70vw;
+    align-self: center;
+  }
+  /* project  -------------- */
+  .project-container {
+    margin: 4rem 5vw;
+  }
+  .project-card-container {
+    justify-content: space-evenly;
+    flex-direction: column;
+  }
+  .project-card {
+    width: 55vw;
+  }
+
+  /* contact --------------- */
+  .contact-container {
+    width: 80vw;
+    flex-direction: column;
+  }
+  .contact-box1 {
+    margin: 2rem auto;
+    width: 65vw;
+  }
+  .contact-box2 {
+    width: 65vw;
+    margin: 0 auto 2rem auto;
+    align-items: center;
+  }
+  .contact-input {
+    margin: 12px 0px;
+    width: 60vw;
+  }
+}
+
+@media (width <= 480px) {
+  /* navbar ----------------*/
+    .nav-logo {
+      margin-left: 20px;
+    }
+  /* profile ---------------*/
+    .profile-text {
+      width: 70vw;
+      font-size: 1.2rem;
+    }
+    .profile-hello {
+    font-size: 2.1rem;
+    }
+    .profile-photo {
+      width: 60vw;
+    }
+  /* aboutME --------------*/
+    .aboutme-container {
+      width: 90vw;
+    }
+  /* project ---------------*/
+    .project-container {
+      margin: 4rem 3vw;
+    }
+    .project-card {
+      width: 80vw;
+    }
+  /* contact ---------------*/
+    .contact-container {
+      width: 90vw;
+    }
+    .contact-box1 {
+      margin: 1.5rem auto;
+      width: 75vw;
+    }
+    .contact-box2 {
+      width: 75vw;
+      margin: 0 auto 1.5rem auto;
+    }
+    .contact-input {
+      width: 75vw;
+    }
+}
