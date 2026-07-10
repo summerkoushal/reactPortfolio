@@ -8,7 +8,7 @@ export default function AboutMe() {
           <img
             className="about-img"
             src="https://www.stefantopalovic.com/static/media/about-img.62b47e7f183d4b4e9feb.webp"
-            alt="aboutMe image"
+            alt="aboutMe"
           />
         </div>
         <div className="about-text">
