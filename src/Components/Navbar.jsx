@@ -12,12 +12,15 @@ export default function Navbar() {
     <>
       <div id="home"></div>
       <div className="nav-container">
-        <a href="#home" className="nav-logo"> SummerKoushal </a>
+        <a href="#home" className="nav-logo"> &lt;Summer/&gt; </a>
         <li className="nav-link-container">
           <a href="#home" className="nav-link"> Home </a>
           <a href="#about" className="nav-link"> About </a>
           <a href="#projects" className="nav-link"> Projects </a>
           <a href="#contact" className="nav-link"> Contact </a>
+          <a href="" className="nav-link">
+            {/* <input style={{ border: '2px solid green'}} type="checkbox" /> */}
+            dark </a>
         </li>
         {SideBar ? (
           <i className="fa fa-xmark" onClick={() => sidebar()}></i>
