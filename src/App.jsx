@@ -10,11 +10,11 @@ function App() {
   return (
     <>
       <Navbar />
-      <Profile />
-      <AboutMe />
-      <Projects />
-      <Contact />
-      <Footer />
+      {/* <Profile /> */}
+      {/* <AboutMe /> */}
+      {/* <Projects /> */}
+      {/* <Contact /> */}
+      {/* <Footer /> */}
     </>
   );
 }
