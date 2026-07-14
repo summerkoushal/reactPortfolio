@@ -13,8 +13,8 @@ function App() {
       <Profile />
       <AboutMe />
       <Projects />
-      {/* <Contact /> */}
-      {/* <Footer /> */}
+      <Contact />
+      <Footer />
     </>
   );
 }
